@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Елагина](https://up.htmlacademy.ru/adaptive/18/user/938431).
-* Наставник: [Александр Бабченко] (https://up.htmlacademy.ru/adaptive/18/user/619357).
+* Наставник: [Александр Бабченко](https://up.htmlacademy.ru/adaptive/18/user/619357).
 
 ---
 
