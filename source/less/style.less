@@ -1,3 +1,69 @@
-body {
-  margin: 0;
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+      url("../fonts/oswaldregular.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+      url("../fonts/oswaldmedium.woff") format("woff");
+}
+
+body {
+  max-width: 320px;
+  margin: 0 auto;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@import "advantages.less";
+@import "button.less";
+@import "catalog.less";
+@import "categories.less";
+@import "copyright.less";
+@import "extra-catalog.less";
+@import "logo-main.less";
+@import "main-catalog.less";
+@import "main-nav.less";
+@import "page-footer.less";
+@import "page-header.less";
+@import "page-main.less";
+@import "product.less";
+@import "promo.less";
+@import "site-list.less";
+@import "social.less";
+
+@title-font: "Oswald", "Arial", sans-serif;
+@base-size: 16px;
+@medium-size: 24px;
+@title-size: 36px;
+@border: 1px solid #e6e6e6;
+@color-2: #f2f2f2;
+
+
