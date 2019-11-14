@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/oswaldregular.woff2") format("woff2"),
-      url("../fonts/oswaldregular.woff") format("woff");
+    url("../fonts/oswaldregular.woff") format("woff");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/oswaldmedium.woff2") format("woff2"),
-      url("../fonts/oswaldmedium.woff") format("woff");
+    url("../fonts/oswaldmedium.woff") format("woff");
 }
 
 body {
@@ -46,6 +46,7 @@ body {
 @import "button.less";
 @import "catalog.less";
 @import "categories.less";
+@import "container.less";
 @import "copyright.less";
 @import "extra-catalog.less";
 @import "logo-main.less";
@@ -59,11 +60,34 @@ body {
 @import "site-list.less";
 @import "social.less";
 
+// Переменные
+
 @title-font: "Oswald", "Arial", sans-serif;
 @base-size: 16px;
 @medium-size: 24px;
 @title-size: 36px;
 @border: 1px solid #e6e6e6;
+@color-1: #ffffff;
 @color-2: #f2f2f2;
+@title-color: #111111;
+@text-color: #444444;
+@button-color: #68b738;
+@button-hover-color: #5eaa2f;
 
+// Примеси
 
+.text-size(@font-size: 16px; @line-height: 20px) {
+  font-size: @font-size;
+  line-height: @line-height;
+}
+
+.title-style(@font-weight: normal, @register: uppercase) {
+  font-family: @title-font;
+  font-weight: @font-weight;
+  text-transform: @register;
+}
+
+.container(@padding: 20px) {
+  padding-left: @padding;
+  padding-right: @padding;
+}

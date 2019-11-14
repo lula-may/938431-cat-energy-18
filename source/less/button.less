@@ -1,0 +1,34 @@
+.button {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .text-size(16px, 20px);
+  .title-style();
+  color: @color-1;
+  text-decoration: none;
+  text-align: center;
+
+  background-color: @button-color;
+
+  &:hover {
+    background-color: @button-hover-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--grey {
+  background-color: @color-2;
+  color: @text-color;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}

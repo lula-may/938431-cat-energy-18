@@ -2,7 +2,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  }
+}
 
 .site-list__item {
   border-top: @border;
@@ -14,11 +14,16 @@
   padding-bottom: 23px;
   text-align: center;
 
-  font-family: @title-font;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 500;
-  text-transform: uppercase;
+  .title-style(500, uppercase);
+  .text-size(20px, 20px);
   text-decoration: none;
-  color: #111111;
+  color: @title-color;
+
+  &:hover {
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
 }
