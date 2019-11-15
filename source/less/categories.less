@@ -26,8 +26,8 @@
   margin-bottom: 20px;
   padding-left: 92px;
 
-  .title-style();
-  .text-size(@medium-size, 37px);
+  .set-heading-uppercase();
+  .set-font-size(@medium-size, 37px);
 }
 
 .categories__text {
@@ -40,12 +40,9 @@
 }
 
 .categories__link {
-  font-family: @title-font;
-  font-size: @base-size;
-  font-weight: normal;
-  line-height: 16px;
+  .set-heading-uppercase();
+  .set-font-size(@base-size, @base-size);
   text-decoration: none;
-  text-transform: uppercase;
   color: @title-color;
 
   &:active {

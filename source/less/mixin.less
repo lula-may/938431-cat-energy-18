@@ -1,12 +1,16 @@
-.text-size(@font-size: 16px; @line-height: 20px) {
+.set-font-size(@font-size: 16px; @line-height: 20px) {
   font-size: @font-size;
   line-height: @line-height;
 }
 
-.title-style(@font-weight: normal, @register: uppercase) {
+.set-heading-style() {
   font-family: @title-font;
-  font-weight: @font-weight;
-  text-transform: @register;
+  font-weight: normal;
+}
+
+.set-heading-uppercase() {
+  .set-heading-style();
+  text-transform: uppercase;
 }
 
 .container(@padding: 20px) {

@@ -21,13 +21,18 @@
   margin: 0;
   margin-bottom: 27px;
 
-  .text-size(@title-size, 36px);
+  .set-font-size(@title-size, @title-size);
   font-weight: normal;
 }
 
 .promo__slogan {
   margin: 0;
 
-  .text-size(14px, 14px);
+  .set-font-size(@line*0.7, @line*0.7);
   text-transform: uppercase;
+}
+
+.promo__link {
+  margin-left: 20px;
+  margin-right: 20px;
 }
