@@ -1,0 +1,34 @@
+.button {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .set-font-size(@base-size, @line);
+  .set-uppercase-style();
+  color: @bg-white;
+  text-decoration: none;
+  text-align: center;
+
+  background-color: @bg-green;
+
+  &:hover {
+    background-color: @bg-green-hvr;
+  }
+
+  &:active {
+    color: @bg-white-down;
+  }
+}
+
+.button--grey {
+  background-color: @bg-lightgrey;
+  color: @text-color;
+
+  &:hover {
+    background-color: @bg-lightgrey-hvr;
+  }
+
+  &:active {
+    color: @text-color-down;
+  }
+}

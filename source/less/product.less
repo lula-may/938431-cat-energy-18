@@ -1,0 +1,27 @@
+.product {
+  padding: 25px 20px;
+
+  border-bottom: @border;
+}
+
+.product__link {
+  text-decoration: none;
+  color: @title-color;
+}
+
+.product__title {
+  margin: 0;
+  padding: 0;
+
+  .set-heading-style();
+  .set-font-size(@base-size, @line);
+}
+
+.product__image {
+  width: 140px;
+  height: 145px;
+}
+
+.product__info {
+  .set-font-size(@line*0.6, @line*0.8);
+}

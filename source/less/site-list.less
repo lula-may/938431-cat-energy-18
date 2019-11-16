@@ -1,0 +1,30 @@
+.site-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item {
+  border-top: @border;
+}
+
+.site-list__item a {
+  display: block;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  text-align: center;
+
+  .set-uppercase-style();
+  .set-font-size(@line, @line);
+  font-weight: 500;
+  text-decoration: none;
+  color: @title-color;
+
+  &:hover {
+    color: @title-color-hvr;
+  }
+
+  &:active {
+    color: @title-color-down;
+  }
+}
