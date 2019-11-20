@@ -14,10 +14,18 @@
     url("../fonts/oswaldmedium.woff") format("woff");
 }
 
-body {
-  max-width: 320px;
-  margin: 0 auto;
+html {
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
 
   font-family: "Arial", sans-serif;
   font-size: @line*0.7;
@@ -25,6 +33,11 @@ body {
   color: @text-color;
 
   background-color: @bg-white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {

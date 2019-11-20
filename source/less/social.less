@@ -1,13 +1,17 @@
 .social {
-  padding-top: 25px;
-  padding-bottom: 25px;
 
   border-bottom: @border;
 }
 
 .social__list {
-  margin: 0;
-  padding: 0;
+  .list-reset();
+  display: flex;
+  justify-content: center;
 
-  list-style: none;
+  // for layout
+  min-height: 66px;
+}
+
+.social__item {
+  width: 55px;
 }

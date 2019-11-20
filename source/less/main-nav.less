@@ -1,3 +1,29 @@
 .main-nav {
-  margin: 0;
+  // for layout
+  min-height: 200px;
+}
+
+.main-nav__list {
+  .list-reset();
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 460px;
+    // for layout
+    min-height: 58px;
+  }
+
+  .main-nav__list {
+    // for layout
+    min-height: 58px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 570px;
+    // for layout
+    min-height: 60px;
+  }
 }

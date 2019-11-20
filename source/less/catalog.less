@@ -1,6 +1,46 @@
 .catalog {
-  margin: 0;
-  padding: 0;
+  width: 320px;
+  .list-reset();
 
-  list-style: none;
+  // for layout
+  min-height: 1465px;
+}
+
+.catalog__item {
+  // for layout
+  min-height: 209px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  .catalog__item {
+    width: 324px;
+    min-height: 431px;
+    margin-top: 140px;
+
+    &:nth-child(odd) {
+      margin-right: auto;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    // for layout
+    min-height: 1146px;
+  }
+
+  .catalog__item {
+    width: 245px;
+    margin-right: auto;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
 }
