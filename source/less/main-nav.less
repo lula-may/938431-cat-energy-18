@@ -1,6 +1,13 @@
 .main-nav {
+  position: relative;
   // for layout
   min-height: 200px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -45px;
+  right: 20px;
 }
 
 .main-nav__list {
@@ -14,6 +21,10 @@
     min-height: 58px;
   }
 
+  .main-nav__toggle {
+    display: none;
+  }
+
   .main-nav__list {
     // for layout
     min-height: 58px;
@@ -22,8 +33,15 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    width: 570px;
-    // for layout
-    min-height: 60px;
+    width: 720px;
+    padding-top: 55px;
+  }
+
+  .main-nav--index {
+    min-height: 696px;
+
+    color: @bg-white;
+
+    background-color: @bg-green;
   }
 }
