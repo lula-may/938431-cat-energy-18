@@ -1,6 +1,31 @@
 .contacts {
-  // for layout
-  min-height: 480px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.contacts__wrapper {
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+}
+
+.contacts__title {
+  .set-font-size(@base-size, @line);
+  .set-uppercase-style();
+}
+
+.contacts__address {
+  .set-font-size(@line*0.7, @line);
+  font-style: normal;
+}
+
+.contacts__map {
+  height: 362px;
+  margin-bottom: -4px;
+
+  background-color: @bg-lightgrey;
+  border: none;
 }
 
 @media (min-width: @tablet-width) {
