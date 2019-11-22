@@ -1,6 +1,21 @@
+.page-header {
+  width: 320px;
+  margin: 0 auto;
+
+  // Временно для сетки
+  min-height: 265px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-header__logo {
-  margin-left: 20px;
-  margin-right: 20px;
+  height: 65px;
+
+  // margin-left: 20px;
+  // margin-right: 20px;
 
   &:hover {
     opacity: 0.8;
@@ -14,4 +29,46 @@
 .page-header__logo-image {
   width: 191px;
   height: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: auto;
+    padding-top: 24px;
+
+    // Временно для сетки
+    min-height: 82px;
+  }
+
+  .page-header__wrapper {
+    width: 708px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+
+    // for layout
+    min-height: 58px;
+  }
+
+  .page-header__logo {
+    height: 58px;
+    width: 192px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    padding-top: 0;
+  }
+
+  .page-header__wrapper {
+    width: 1440px;
+  }
+
+  .page-header__logo {
+    height: 60px;
+    width: 245px;
+    margin-left: 110px;
+    margin-top: 55px;
+  }
 }

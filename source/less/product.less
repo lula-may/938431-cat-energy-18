@@ -1,6 +1,7 @@
 .product {
-  padding: 25px 20px;
-
+  padding-top: 22px;
+  padding-bottom: 24px;
+  .container(20px);
   border-bottom: @border;
 }
 
@@ -24,4 +25,20 @@
 
 .product__info {
   .set-font-size(@line*0.6, @line*0.8);
+}
+
+@media (min-width: @tablet-width) {
+  .product {
+    padding-top: 164px;
+    padding-bottom: 40px;
+    .container(35px);
+
+    background-color: @bg-lightgrey;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .product {
+    .container(37px);
+  }
 }

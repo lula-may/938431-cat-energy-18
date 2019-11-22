@@ -1,0 +1,33 @@
+.show-more {
+  .container(20px);
+  padding-top: 80px;
+  padding-bottom: 25px;
+
+  text-align: center;
+
+  border-bottom: @border;
+
+  // for layout
+  min-height: 209px;
+}
+
+.show-more__title {
+  margin: 0;
+  padding: 0;
+
+  .set-heading-style();
+  .set-font-size(@base-size, @line);
+  color: @title-color;
+}
+
+.show-more__text {
+  .set-font-size(@line*0.6, @base-size);
+}
+
+@media (min-width: @tablet-width) {
+  .show-more {
+    padding-top: 164px;
+    padding-bottom: 40px;
+    .container(35px);
+  }
+}

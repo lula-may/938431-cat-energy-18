@@ -1,6 +1,8 @@
 .extra-catalog {
   .container(20px);
-  margin-bottom: 35px;
+
+  // for layout
+  min-height: 960px;
 }
 
 .extra-catalog__main-title {
@@ -60,4 +62,18 @@
 .extra-catalog__gift p {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .extra-catalog {
+    // for layout
+    min-height: 1085px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra-catalog {
+    // for layout
+    min-height: 563px;
+  }
 }
