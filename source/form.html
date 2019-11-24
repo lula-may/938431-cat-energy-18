@@ -2,10 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="body body--form">
+  <body class="body body">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
@@ -37,77 +38,79 @@
           Заполните анкету и мы подберем программу питания для вашего кота
         </p>
         <form class="program-selection__form form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="form__fieldset">
-            <label class="form__label">
+          <fieldset class="form__fieldset form__fieldset--inputs">
+            <label class="form__label form__label--input">
               Имя:*
               <input class="form__input" type="text" name="Name" placeholder="Барсик" required>
             </label>
-            <label class="form__label">
+            <label class="form__label form__label--input">
               Вес (кг):*
               <input class="form__input" type="number" name="Weight" placeholder="7" required>
             </label>
-            <label class="form__label">
+            <label class="form__label form__label--input">
               Возраст (лет):
               <input class="form__input" type="number" name="Age" placeholder="7">
             </label>
           </fieldset>
-          <fieldset class="form__fieldset">
-            <label class="form__label">
+          <fieldset class="form__fieldset form__fieldset--radios">
+            <label class="form__label form__label--radio">
               <input class="form__radio" type="radio" name="weight-program" value="lose-weight" checked>
               Похудение
             </label>
-            <label class="form__label">
+            <label class="form__label form__label--radio">
               <input class="form__radio" type="radio" name="weight-program" value="gain-weight">
               Набор массы
             </label>
-            <label class="form__label">
+            <label class="form__label form__label--radio">
               <input class="form__radio" type="radio" name="weight-program" value="don't-know">
               Не знаю (нужен ваш совет)
             </label>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset">
             <legend class="form__title">Контактные данные (владельца кота)</legend>
-            <label class="form__label">
+            <label class="form__label form__label--input">
               E-mail:*
               <input class="form__input form__input--email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="kuklachev@gmail.com" required>
             </label>
-            <label class="form__label">
+            <label class="form__label form__label--input">
               Телефон:*
               <input class="form__input form__input--tel" type="tel" name="tel" pattern="\8 (\[0-9]{3}\) \[0-9]{3}\-[0-9]{2}\-[0-9]{2}" placeholder="8 (960) 900-60-90" required>
             </label>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset">
             <legend class="form__title">Комментарий</legend>
             <textarea class="form__textarea" rows="7" cols="35">Расскажите обо всех повадках кота</textarea>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset">
             <legend class="form__title">Дополнительно</legend>
-            <label class="form__label">
+            <label class="form__label  form__label--checkbox">
                 <input class="form__checkbox" type="checkbox" name="optional" value="sweetener" checked>
                 Сахарозаменитель
             </label>
-            <label class="form__label">
+            <label class="form__label  form__label--checkbox">
                 <input class="form__checkbox" type="checkbox" name="optional" value="water">
                 Питьевая вода
             </label>
-            <label class="form__label">
+            <label class="form__label  form__label--checkbox">
                 <input class="form__checkbox" type="checkbox" name="optional" value="milk">
                 Молоко
             </label>
-            <label class="form__label">
+            <label class="form__label  form__label--checkbox">
                 <input class="form__checkbox" type="checkbox" name="optional" value="vitamins">
                 Витамины
             </label>
           </fieldset>
           <button class="form__submit button" type="submit">Отправить заявку</button>
-          <p class="form__footnote">* — Обязательные поля</p>
+          <small class="form__footnote">* — Обязательные поля</small>
         </form>
       </section>
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="contacts__wrapper contacts__wrapper--grey">
+            <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
         <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CGT-UZ2g" width="320" height="400" aria-label="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
       </section>
 

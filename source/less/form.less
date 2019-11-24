@@ -1,0 +1,98 @@
+.form {
+  padding-bottom: 30px;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  .container(20px);
+  border: none;
+}
+
+.form__fieldset--inputs {
+  padding-top: 20px;
+  padding-bottom: 24px;
+
+  border-bottom: @border;
+}
+
+.form__fieldset--radios {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border-bottom: @border;
+}
+
+.form__label {
+  display: block;
+
+  .set-font-size(@base-size, @line*0.9);
+  .set-uppercase-style();
+  color: @subtitle-color;
+}
+
+.form__label--input {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__label--radio {
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__label--checkbox {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 35px;
+  }
+}
+
+.form__input {
+  height: 45px;
+  margin-left: 16px;
+
+  font: inherit;
+  .set-uppercase-style();
+}
+
+.form__radio,
+.form__checkbox {
+  height: 30px;
+}
+
+.form__title {
+  padding-top: 36px;
+  padding-right: 90px;
+  padding-bottom: 36px;
+
+  .set-font-size(@medium-size, @medium-size);
+  .set-heading-style();
+  color: @text-color;
+}
+
+.form__textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px;
+
+  .set-font-size(@base-size, @line*0.9);
+  .set-uppercase-style();
+  color: @subtitle-color;
+}
+
+.form__submit {
+  width: 280px;
+  margin: 0 auto 20px auto;
+}
+
+.form__footnote {
+  .set-font-size(@line*0.7, @line*0.8);
+}

@@ -1,18 +1,46 @@
 .contacts {
-  // for layout
-  min-height: 480px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.contacts__wrapper {
+  padding: 30px 20px 25px 20px;
+}
+
+.contacts__wrapper--grey {
+  background-color: @bg-lightgrey;
+}
+
+.contacts__title {
+  margin: 0;
+
+  .set-font-size(@base-size, @line);
+  .set-uppercase-style();
+}
+
+.contacts__address {
+  .set-font-size(@line*0.7, @line);
+  font-style: normal;
+}
+
+.contacts__map {
+  min-height: 362px;
+  margin-bottom: -4px;
+
+  background-color: @bg-lightgrey;
+  border: none;
 }
 
 @media (min-width: @tablet-width) {
   .contacts {
-    // for layout
+    // for layout Уберу позже
     min-height: 595px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts {
-    // for layout
+    // for layout Уберу позже
     min-height: 400px;
   }
 }
