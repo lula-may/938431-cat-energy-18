@@ -20,9 +20,9 @@
     top: -65px;
     right: 0;
 
-    width: 62px;
-    height: 62px;
-    // background-color: red;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
 
     font-size: 0;
 
@@ -52,8 +52,9 @@
       left: 17px;
       width: 25px;
       height: 2px;
+
       background-color: #000000;
-  }
+    }
 
     &::before {
       transform: rotate(45deg);
@@ -86,21 +87,13 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    width: 720px;
+    width: 610px;
     padding-top: 55px;
+    padding-left: 20px;
   }
 
   .main-nav--index {
-    position: relative;
-    min-height: 696px;
-    z-index: 1;
-
     color: @bg-white;
-
-    background-color: @bg-green;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
 
     .site-list__item--active::after {
       background-color: @bg-white;
