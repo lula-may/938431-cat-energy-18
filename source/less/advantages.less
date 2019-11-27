@@ -11,6 +11,7 @@
 
 .advantages__title {
   margin: 0;
+  margin-bottom: 29px;
 
   .set-heading-style();
   .set-font-size(@title-size, @line*3);
@@ -22,13 +23,44 @@
 }
 
 .advantages__item {
+  position: relative;
+
   margin-bottom: 20px;
   padding-left: 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: @bg-green;
+    background-repeat: no-repeat;
+    background-position: center center;
+    // background-size: contain;
+  }
+}
+
+.advantages__item--nutrition::before {
+  background-image: url("../img/advantage-leaf@1x.png");
+}
+
+.advantages__item--powder::before {
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+.advantages__item--meals-a-day::before {
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.advantages__item--time::before {
+  background-image: url("../img/advantage-clock@1x.png");
 }
 
 .advantages__text {
   margin: 0;
-  padding: 5px 0;
+  padding: 2px 0 6px;
 }
 
 @media (min-width: @tablet-width) {
@@ -51,8 +83,8 @@
   }
 
   .advantages__item {
-    width: 323px;
-    padding: 115px 100px 50px 0;
+    width: 322px;
+    padding: 110px 75px 40px 0;
     margin-bottom: 88px;
 
     &:nth-child(even) {
@@ -61,14 +93,62 @@
 
     &:last-child,
     &:nth-last-child(2) {
-      margin-bottom: 59px;
+      margin-bottom: 57px;
     }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: "1";
+      position: absolute;
+      top: -40px;
+      left: 118px;
+      bottom: 0;
+      z-index: 1;
+
+      .set-heading-style();
+      .set-font-size(281px, 281px);
+      color: @bg-lightgrey;
+      padding: 0;
+    }
+  }
+
+  .advantages__item--powder::after {
+    content: "2";
+    left: 111px;
+  }
+
+  .advantages__item--meals-a-day::after {
+    content: "3";
+    left: 113px;
+  }
+
+  .advantages__item--time::after {
+    content: "4";
+    left: 113px;
+  }
+
+  .advantages__title {
+    margin-bottom: 73px;
+    .set-font-size(@line*3, @line*3);
+  }
+
+  .advantages__text {
+    position: relative;
+    z-index: 2;
+
+    .set-font-size(@base-size, @line*1.2);
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantages {
     width: auto;
+
+    border: none;
   }
 
   .advantages__wrapper {
@@ -77,22 +157,19 @@
   }
 
   .advantages__title {
-    // for layout Уберу позже
-    min-height: 126px;
-  }
-
-  .advantages__list {
-    // for layout Уберу позже
-    min-height: 228px;
+    margin-bottom: 72px;
   }
 
   .advantages__item {
-    width: 245px;
-    padding: 115px 0 50px 0;
+    width: 246px;
+    padding: 110px 0 39px 0;
     margin-left: 0;
+    margin-bottom: 20px;
 
-    &:nth-child(3) {
+    &:nth-child(3),
+    &:last-child {
       margin-left: auto;
+      margin-bottom: 20px;
     }
   }
 }
