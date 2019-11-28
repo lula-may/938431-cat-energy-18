@@ -1,8 +1,12 @@
 .copyright {
-  padding-top: 20px;
+  padding-top: 18px;
 }
 
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   .set-font-size(@line*0.8, @line*0.8);
   text-decoration: none;
   color: @text-color;
@@ -17,6 +21,20 @@
 }
 
 .copyright__logo {
-  width: 42px;
-  height: 42px;
+  width: 41px;
+  height: 40px;
+  margin-top: 2px;
+  margin-right: -8px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__link {
+    margin-top: 0;
+  }
 }
