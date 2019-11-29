@@ -4,8 +4,8 @@
 }
 
 .catalog__item {
-  // for layout Уберу позже
-  min-height: 209px;
+  margin-bottom: -1px;
+  border: @border;
 }
 
 @media (min-width: @tablet-width) {
@@ -17,8 +17,10 @@
 
   .catalog__item {
     width: 324px;
-    min-height: 431px;
-    margin-top: 140px;
+    margin: 0;
+
+    border: none;
+    border-top: none;
 
     &:nth-child(odd) {
       margin-right: auto;
