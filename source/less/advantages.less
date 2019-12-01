@@ -38,7 +38,6 @@
     background-color: @bg-green;
     background-repeat: no-repeat;
     background-position: center center;
-    // background-size: contain;
   }
 }
 
@@ -61,6 +60,10 @@
 .advantages__text {
   margin: 0;
   padding: 2px 0 6px;
+
+  span {
+    white-space: nowrap;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -80,6 +83,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    counter-reset: cnt;
   }
 
   .advantages__item {
@@ -102,32 +107,35 @@
     }
 
     &::after {
-      content: "1";
       position: absolute;
       top: -40px;
       left: 118px;
       bottom: 0;
+      padding: 0;
+
+      counter-increment: cnt;
+      content: counter(cnt);
+
       z-index: 1;
 
       .set-heading-style();
       .set-font-size(281px, 281px);
       color: @bg-lightgrey;
-      padding: 0;
     }
   }
 
   .advantages__item--powder::after {
-    content: "2";
+    // content: "2";
     left: 111px;
   }
 
   .advantages__item--meals-a-day::after {
-    content: "3";
+    // content: "3";
     left: 113px;
   }
 
   .advantages__item--time::after {
-    content: "4";
+    // content: "4";
     left: 113px;
   }
 
