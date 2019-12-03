@@ -10,18 +10,22 @@
 
 .page-header__logo {
   height: 65px;
+  padding-top: 13px;
+  padding-left: 20px;
 
-  &:hover {
+  border-bottom: @border;
+
+  &[href]:hover {
     opacity: 0.8;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.6;
   }
 }
 
 .page-header__logo-image {
-  width: 191px;
+  width: 190px;
   height: 38px;
 }
 
@@ -29,6 +33,7 @@
   .page-header {
     width: auto;
     padding-top: 24px;
+    margin-bottom: 57px;
   }
 
   .page-header__wrapper {
@@ -41,22 +46,45 @@
   .page-header__logo {
     height: 58px;
     width: 192px;
+
+    border: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
+    max-width: 1440px;
     padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .page-header--index {
+    position: relative;
+    min-height: 696px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      right: 0;
+      bottom: 0;
+
+      background-color: @bg-green;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: auto auto;
+    }
   }
 
   .page-header__wrapper {
-    width: 1440px;
+    width: 1220px;
   }
 
   .page-header__logo {
     height: 60px;
     width: 245px;
-    margin-left: 110px;
     margin-top: 55px;
   }
 }

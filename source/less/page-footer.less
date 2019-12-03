@@ -20,36 +20,43 @@
   border-bottom: @border;
 }
 
-.page-footer__social {
-  // for layout Уберу позже
-  min-height: 65px;
-}
-
-.page-footer__copyright {
-  // for layout Уберу позже
-  min-height: 55px;
-}
-
 @media (min-width: @tablet-width) {
   .page-footer {
     width: auto;
+    padding-top: 45px;
+    padding-bottom: 60px;
   }
 
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 708px;
     margin: 0 auto;
   }
 
-  .page-footer__logo,
+  .page-footer__logo {
+    width: 162px;
+    padding: 14px 32px 4px 2px;
+
+    border: none;
+  }
+
   .page-footer__copyright {
     width: 162px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .page-footer {
+    padding-top: 48px;
+  }
+
   .page-footer__wrapper {
     width: 1220px;
+  }
+
+  .page-footer__copyright {
+    margin-top: 5px;
   }
 }
