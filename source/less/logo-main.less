@@ -1,10 +1,26 @@
 .logo-main {
+  cursor: default;
+}
+
+.logo-main[href] {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo-main__image {
   width: 130px;
   height: 25px;
 }
 
 @media (min-width: @tablet-width) {
-  .logo-main {
+  .logo-main__image {
     height: 28px;
   }
 }
