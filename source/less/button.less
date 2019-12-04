@@ -5,28 +5,28 @@
 
   .set-font-size(@base-size, @line);
   .set-uppercase-style();
-  color: @bg-white;
+  color: @bg-base;
   text-decoration: none;
   text-align: center;
 
-  background-color: @bg-green;
+  background-color: @bg-main;
   border: none;
 
   &:hover {
-    background-color: @bg-green-hvr;
+    background-color: @bg-main-hvr;
   }
 
   &:active {
-    color: @bg-white-down;
+    color: @bg-base-down;
   }
 }
 
 .button--grey {
-  background-color: @bg-lightgrey;
+  background-color: @bg-secondary;
   color: @text-color;
 
   &:hover {
-    background-color: @bg-lightgrey-hvr;
+    background-color: @bg-secondary-hvr;
   }
 
   &:active {
