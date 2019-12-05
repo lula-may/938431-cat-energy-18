@@ -1,7 +1,5 @@
 .promo {
-  position: relative;
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
   margin-bottom: 22px;
 
   font-family: @title-font;
@@ -10,9 +8,9 @@
 }
 
 .promo__container {
+  position: relative;
+
   padding-top: 27px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-bottom: 136px;
   box-sizing: border-box;
 
@@ -23,7 +21,8 @@
 }
 
 .promo__title {
-  margin: 0;
+  width: 250px;
+  margin: 0 auto;
   margin-bottom: 25px;
 
   .set-font-size(@title-size, @title-size);
@@ -31,7 +30,8 @@
 }
 
 .promo__slogan {
-  margin: 0;
+  width: 250px;
+  margin: 0 auto;
   padding-bottom: 167px;
 
   .set-font-size(@line*0.7, @line*0.7);
@@ -41,14 +41,14 @@
 .promo__image {
   position: absolute;
   top: 166px;
-  left: 20px;
+  left: calc(50% - 140px);
 }
 
 .promo__link {
   padding-top: 11px;
   padding-bottom: 12px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
 
   .set-font-size(@line*0.7, @line*0.9);
 }
@@ -67,10 +67,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 706px;
+    width: 91.93%;
     margin: 0 auto;
-    padding-left: 87px;
-    padding-right: 162px;
+    padding-left: 11.33%;
+    padding-right: 11.33%;
 
     background: none;
   }
@@ -85,21 +85,23 @@
   }
 
   .promo__title {
+    width: 420px;
     margin-bottom: 41px;
 
     .set-font-size(@line*3, @line*3);
   }
 
   .promo__slogan {
+    width: 420px;
     padding-bottom: 48px;
     .set-font-size(@line, @line);
   }
 
   .promo__image {
     top: 199px;
-    left: 168px;
-    width: auto;
-    height: 608px;
+    left: -90px;
+    width: 708px;
+    height: auto;
     z-index: 1;
   }
 
@@ -124,14 +126,14 @@
   }
 
   .promo__wrapper {
-    width: 1220px;
+    width: 1060px;
     min-height: 560px;
     margin: 0 auto;
-    padding-left: 79px;
+    padding: 0;
   }
 
   .promo__container {
-    width: 450px;
+    width: auto;
     padding-top: 84px;
   }
 
@@ -141,10 +143,10 @@
 
   .promo__image {
     top: 5px;
-    left: 600px;
+    left: 415px;
 
-    width: auto;
-    height: 500px;
+    width: 500px;
+    height: auto;
   }
 
   .promo__link {

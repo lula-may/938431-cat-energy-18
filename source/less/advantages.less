@@ -1,11 +1,10 @@
 .advantages {
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
   margin-bottom: 40px;
 }
 
 .advantages__wrapper {
-  width: 280px;
+  width: 87.5%;
   margin: 0 auto;
 }
 
@@ -25,6 +24,7 @@
 .advantages__item {
   position: relative;
 
+  min-height: 60px;
   margin-bottom: 20px;
   padding-left: 80px;
 
@@ -64,14 +64,13 @@
 
 @media (min-width: @tablet-width) {
   .advantages {
-    width: auto;
     margin-bottom: 0;
 
     border-bottom: @border;
   }
 
   .advantages__wrapper {
-    width: 706px;
+    width: 91.93%;
     margin: 0 auto;
   }
 
@@ -84,7 +83,7 @@
   }
 
   .advantages__item {
-    width: 322px;
+    width: 45.61%;
     padding: 110px 75px 40px 0;
     margin-bottom: 88px;
 
@@ -105,7 +104,7 @@
     &::after {
       position: absolute;
       top: -40px;
-      left: 118px;
+      left: 36.65%;
       bottom: 0;
       padding: 0;
 
@@ -121,15 +120,15 @@
   }
 
   .advantages__item--powder::after {
-    left: 111px;
+    left: 34.26%;
   }
 
   .advantages__item--meals-a-day::after {
-    left: 113px;
+    left: 35.09%;
   }
 
   .advantages__item--time::after {
-    left: 113px;
+    left: 35.09%;
   }
 
   .advantages__title {
@@ -140,6 +139,8 @@
   .advantages__text {
     position: relative;
     z-index: 2;
+
+    width: 76.1%;
 
     .set-font-size(@base-size, @line*1.2);
   }
@@ -172,5 +173,26 @@
       margin-left: auto;
       margin-bottom: 20px;
     }
+
+    &::after {
+      left: 118px;
+    }
   }
+
+  .advantages__item--powder::after {
+    left: 111px;
+  }
+
+  .advantages__item--meals-a-day::after {
+    left: 113px;
+  }
+
+  .advantages__item--time::after {
+    left: 113px;
+  }
+
+  .advantages__text {
+    width: auto;
+  }
+
 }
