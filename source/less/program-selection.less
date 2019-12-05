@@ -3,11 +3,48 @@
   margin: 0 auto;
 }
 
+.program-selection__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .program-selection__text {
-  margin-top: 0;
-  margin-right: 20px;
+  width: 230px;
+  margin: 0;
   margin-bottom: 20px;
-  margin-left: 20px;
+  padding: 0;
 
   .set-uppercase-style();
+}
+
+@media (min-width: @tablet-width) {
+  .program-selection {
+    width: auto;
+  }
+
+  .program-selection__wrapper {
+    width: 628px;
+    margin: 0 auto;
+  }
+
+  .program-selection__text {
+    width: 330px;
+    margin-bottom: 66px;
+
+    .set-font-size(@line, @line*1.5);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-selection {
+    max-width: 1440px;
+  }
+
+  .program-selection__wrapper {
+    width: 1220px;
+  }
+
+  .program-selection__text {
+    margin-bottom: 66px;
+  }
 }

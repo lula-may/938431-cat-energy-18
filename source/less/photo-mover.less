@@ -1,10 +1,24 @@
+.photo-mover {
+  position: relative;
+}
+
+.photo-mover__image {
+  position: absolute;
+  top: 20px;
+  width: 320px;
+  height: 240px;
+}
+
 .photo-mover__control {
+  width: 200px;
   margin: 0;
-  margin-top: 35px;
-  margin-left: 45px;
+  margin-left: 64px;
+  padding: 292px 0 35px;
 }
 
 .photo-mover__label {
+  padding: 0;
+
   .set-font-size(@base-size, @line);
   .set-uppercase-style();
 
@@ -12,4 +26,38 @@
   background-color: transparent;
 
   cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-mover {
+    position: relative;
+    width: auto;
+    min-height: 462px;
+
+    background-color: @bg-secondary;
+  }
+
+  .photo-mover__image {
+    position: absolute;
+    top: -170px;
+    width: 685px;
+    height: auto;
+  }
+
+  .photo-mover__control {
+    width: 570px;
+    margin: 0 auto;
+    padding-top: 366px;
+  }
+
+  .photo-mover__label {
+    .set-font-size(@line, @line);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-mover {
+    width: 690px;
+    margin-right: auto;
+  }
 }

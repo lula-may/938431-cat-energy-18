@@ -1,9 +1,8 @@
 .example {
   width: 320px;
   margin: 0 auto;
-  padding-bottom: 40px;
 
-  background-color: @bg-lightgrey;
+  background-color: @bg-secondary;
 }
 
 .example__wrapper {
@@ -12,9 +11,9 @@
 }
 
 .example__title {
-  margin: 0;
-  margin-bottom: 25px;
-  padding: 30px 20px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 18px 0 22px;
 
   .set-font-size(@title-size, @line*3);
   .set-heading-style();
@@ -22,7 +21,7 @@
 
 .example__text {
   margin: 0;
-  padding-right: 10px;
+  padding: 0;
 }
 
 .example__category {
@@ -41,14 +40,44 @@
 
 @media (min-width: @tablet-width) {
   .example {
-    // for layout Уберу позже
-    min-height: 1085px;
+    width: auto;
+    background: none;
+  }
+
+  .example__wrapper {
+    width: 706px;
+    margin: 0 auto 248px;
+  }
+
+  .example__title {
+    width: 708px;
+    margin: 0 auto;
+    padding: 44px 0 63px;
+    .set-font-size(@line*3, @line*3);
+  }
+
+  .example__text {
+    padding-right: 30px;
+    .set-font-size(@base-size, @line*1.2);
   }
 }
 
 @media (min-width: @desktop-width) {
-  .example {
-    // for layout Уберу позже
-    min-height: 675px;
+  .example__title {
+    width: 1220px;
+    padding: 62px 0 75px;
+  }
+
+  .example__container {
+    display: flex;
+    justify-content: center;
+    background-color: @bg-secondary;
+  }
+
+  .example__wrapper {
+    width: 610px;
+    margin: 0;
+    margin-left: auto;
+    padding: 72px 135px 75px 40px;
   }
 }
