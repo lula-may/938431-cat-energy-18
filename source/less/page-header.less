@@ -80,7 +80,11 @@
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-position: center top;
       background-repeat: no-repeat;
-      background-size: auto auto;
+      background-size: cover;
+
+      @media (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 
