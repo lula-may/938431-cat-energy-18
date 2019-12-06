@@ -6,12 +6,16 @@
 .product__wrapper {
   display: flex;
   flex-direction: column;
-  margin-left: 140px;
+  margin-left: 50%;
 }
 
 .product__link {
   text-decoration: none;
   color: @title-color;
+}
+
+.product__link--image {
+  width: 50%;
 }
 
 .product__title {
@@ -50,10 +54,14 @@
 @media (min-width: @tablet-width) {
   .product {
     margin-top: 140px;
-    padding: 164px 37px 40px;
+    padding: 162px 5.37% 40px 5.37%;
 
     background-color: @bg-secondary;
     border: none;
+  }
+
+  .product__image {
+    left: calc(50% - 70px);
   }
 
   .product__wrapper {
@@ -70,7 +78,7 @@
 
   .product__info {
     width: 100%;
-    margin-bottom: 31px;
+    margin-bottom: 32px;
 
     .set-font-size(@base-size, @base-size);
   }
