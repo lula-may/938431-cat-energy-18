@@ -105,10 +105,14 @@
             </p>
             <div class="example__stats">
               <dl class="example__results">
-                <dt class="example__category">снижение веса</dt>
-                <dd class="example__value">5 кг</dd>
-                <dt class="example__category">затрачено времени</dt>
-                <dd class="example__value">60 дней</dd>
+                <div class="example__field">
+                  <dt class="example__category">снижение веса</dt>
+                  <dd class="example__value">5 кг</dd>
+                </div>
+                <div class="example__field">
+                  <dt class="example__category">затрачено времени</dt>
+                  <dd class="example__value">60 дней</dd>
+                </div>
               </dl>
               <dl class="example__costs">
                 <dt>Затраты на питание:</dt>
@@ -117,11 +121,17 @@
             </div>
           </div>
           <div class="photo-mover">
-            <img class="photo-mover__image photo-mover__image--before" src="img/before-mobile@1x.png" width="320" height="240" alt="Толстый кот">
-            <img class="photo-mover__image photo-mover__image--after " src="img/after-mobile@1x.png" width="320" height="240" alt="Худой кот">
+            <div class="photo-mover__image photo-mover__image--after">
+              <img src="img/after-mobile@1x.png" width="320" height="240" alt="Худой кот">
+            </div>
+            <div class="photo-mover__image photo-mover__image--before">
+              <img  src="img/before-mobile@1x.png" width="320" height="240" alt="Толстый кот">
+            </div>
             <p class="photo-mover__control">
               <button class="photo-mover__label" type="button">Было</button>
-              <span class="photo-mover__bar"></span>
+              <span class="photo-mover__bar">
+                <button class="photo-mover__runner"></button>
+              </span>
               <button class="photo-mover__label" type="button">Стало</button>
             </p>
           </div>
