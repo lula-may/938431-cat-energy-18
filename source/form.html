@@ -45,7 +45,7 @@
             <fieldset class="form__fieldset form__fieldset--inputs">
               <label class="form__label form__label--input">
                 Имя:*
-                <input class="form__input" type="text" name="Name" placeholder="Барсик" required>
+                <input class="form__input form__input--name" type="text" name="Name" placeholder="Барсик" required>
               </label>
               <label class="form__label form__label--input">
                 Вес (кг):*
@@ -59,16 +59,19 @@
 
             <fieldset class="form__fieldset form__fieldset--radios">
               <label class="form__label form__label--radio">
-                <input class="form__radio" type="radio" name="weight-program" value="lose-weight" checked>
-                Похудение
+                <input class="form__radio visually-hidden" type="radio" name="weight-program" value="lose-weight" checked>
+                <span class="form__radio-indicator"></span>
+                <span>Похудение</span>
               </label>
               <label class="form__label form__label--radio">
-                <input class="form__radio" type="radio" name="weight-program" value="gain-weight">
-                Набор массы
+                <input class="form__radio visually-hidden" type="radio" name="weight-program" value="gain-weight">
+                <span class="form__radio-indicator"></span>
+                <span>Набор массы</span>
               </label>
               <label class="form__label form__label--radio">
-                <input class="form__radio" type="radio" name="weight-program" value="don't-know">
-                Не знаю (нужен ваш совет)
+                <input class="form__radio visually-hidden" type="radio" name="weight-program" value="don't-know">
+                <span class="form__radio-indicator"></span>
+                <span>Не знаю (нужен ваш совет)</span>
               </label>
             </fieldset>
           </div>
@@ -104,19 +107,23 @@
             </div>
             <div class="form__wrapper">
               <label class="form__label  form__label--checkbox">
-                <input class="form__checkbox" type="checkbox" name="optional" value="sweetener" checked>
+                <input class="form__checkbox visually-hidden" type="checkbox" name="optional" value="sweetener" checked>
+                <span class="form__checkbox-indicator"></span>
                 <span>Сахарозаменитель</span>
               </label>
               <label class="form__label  form__label--checkbox">
-                  <input class="form__checkbox" type="checkbox" name="optional" value="water">
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="optional" value="water">
+                  <span class="form__checkbox-indicator"></span>
                   <span>Питьевая вода</span>
               </label>
               <label class="form__label  form__label--checkbox">
-                  <input class="form__checkbox" type="checkbox" name="optional" value="milk">
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="optional" value="milk">
+                  <span class="form__checkbox-indicator"></span>
                   <span>Молоко</span>
               </label>
               <label class="form__label  form__label--checkbox">
-                  <input class="form__checkbox" type="checkbox" name="optional" value="vitamins">
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="optional" value="vitamins">
+                  <span class="form__checkbox-indicator"></span>
                   <span>Витамины</span>
               </label>
             </div>
