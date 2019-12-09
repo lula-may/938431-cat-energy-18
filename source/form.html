@@ -58,20 +58,17 @@
             </fieldset>
 
             <fieldset class="form__fieldset form__fieldset--radios">
-              <label class="form__label form__label--radio">
-                <input class="form__radio visually-hidden" type="radio" name="weight-program" value="lose-weight" checked>
-                <span class="form__radio-indicator"></span>
-                <span>Похудение</span>
+              <input class="form__radio visually-hidden" id="radio-lose-weight" type="radio" name="weight-program" value="lose-weight" checked>
+              <label class="form__label form__label--radio" for="radio-lose-weight">
+                Похудение
               </label>
-              <label class="form__label form__label--radio">
-                <input class="form__radio visually-hidden" type="radio" name="weight-program" value="gain-weight">
-                <span class="form__radio-indicator"></span>
-                <span>Набор массы</span>
+              <input class="form__radio visually-hidden" id="radio-gain-weight" type="radio" name="weight-program" value="gain-weight">
+              <label class="form__label form__label--radio" for="radio-gain-weight">
+                Набор массы
               </label>
-              <label class="form__label form__label--radio">
-                <input class="form__radio visually-hidden" type="radio" name="weight-program" value="don't-know">
-                <span class="form__radio-indicator"></span>
-                <span>Не знаю (нужен ваш совет)</span>
+              <input class="form__radio visually-hidden" id="radio-don't-know" type="radio" name="weight-program" value="don't-know">
+              <label class="form__label form__label--radio" for="radio-don't-know">
+                Не знаю (нужен ваш совет)
               </label>
             </fieldset>
           </div>
@@ -106,25 +103,21 @@
               <h3 class="form__title form__title--adds">Дополнительно</h3>
             </div>
             <div class="form__wrapper">
-              <label class="form__label  form__label--checkbox">
-                <input class="form__checkbox visually-hidden" type="checkbox" name="optional" value="sweetener" checked>
-                <span class="form__checkbox-indicator"></span>
-                <span>Сахарозаменитель</span>
+              <input class="form__checkbox visually-hidden" id="checkbox-sweetener" type="checkbox" name="optional" value="sweetener" checked>
+              <label class="form__label  form__label--checkbox" for="checkbox-sweetener">
+                Сахарозаменитель
               </label>
-              <label class="form__label  form__label--checkbox">
-                  <input class="form__checkbox visually-hidden" type="checkbox" name="optional" value="water">
-                  <span class="form__checkbox-indicator"></span>
-                  <span>Питьевая вода</span>
+              <input class="form__checkbox visually-hidden" id="checkbox-water" type="checkbox" name="optional" value="water">
+              <label class="form__label  form__label--checkbox" for="checkbox-water">
+                Питьевая вода
               </label>
-              <label class="form__label  form__label--checkbox">
-                  <input class="form__checkbox visually-hidden" type="checkbox" name="optional" value="milk">
-                  <span class="form__checkbox-indicator"></span>
-                  <span>Молоко</span>
+              <input class="form__checkbox visually-hidden" id="checkbox-milk" type="checkbox" name="optional" value="milk">
+              <label class="form__label  form__label--checkbox" for="checkbox-milk">
+                Молоко
               </label>
-              <label class="form__label  form__label--checkbox">
-                  <input class="form__checkbox visually-hidden" type="checkbox" name="optional" value="vitamins">
-                  <span class="form__checkbox-indicator"></span>
-                  <span>Витамины</span>
+              <input class="form__checkbox visually-hidden" id="checkbox-vitamins" type="checkbox" name="optional" value="vitamins">
+              <label class="form__label  form__label--checkbox" for="checkbox-vitamins">
+                Витамины
               </label>
             </div>
           </fieldset>

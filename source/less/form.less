@@ -84,28 +84,6 @@
   }
 }
 
-.form__label--radio {
-  position: relative;
-
-  padding: 5px 20px 8px 45px;
-  margin-bottom: 12px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.form__label--checkbox {
-  position: relative;
-
-  padding: 7px 20px 6px 45px;
-  margin-bottom: 12px;
-
-  &:last-child {
-    margin-bottom: 35px;
-  }
-}
-
 .form__input {
   flex-grow: 1;
 
@@ -150,24 +128,37 @@
   height: 30px;
 }
 
-.form__radio-indicator {
-  position: absolute;
-  top: 0;
-  left: -2px;
+.form__label--radio {
+  position: relative;
 
-  width: 30px;
-  height: 30px;
+  padding: 5px 20px 8px 45px;
+  margin-bottom: 12px;
 
-  border: 1px solid @radio-color;
-  border-radius: 50%;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid @radio-color;
+    border-radius: 50%;
+  }
 
   &::after {
     display: none;
     content: "";
 
     position: absolute;
-    top: 8px;
-    left: 8px;
+    top: 9px;
+    left: 9px;
 
     width: 12px;
     height: 12px;
@@ -178,15 +169,69 @@
 }
 
 .form__radio {
-  &:checked ~ .form__radio-indicator::after {
+  &:checked + .form__label--radio::after {
     display: block;
   }
 
-  &:hover ~ .form__radio-indicator {
+  &:hover + .form__label--radio::before {
     border-color: @radio-hvr-color;
   }
 
-  &:active ~ span {
+  &:active + .form__label {
+    opacity: 0.3;
+  }
+}
+
+.form__label--checkbox {
+  position: relative;
+
+  padding: 7px 20px 6px 46px;
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 35px;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 30px;
+    height: 30px;
+
+    border: @border-dark;
+  }
+
+  &::after {
+    display: none;
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    left: 11px;
+
+    width: 10px;
+    height: 18px;
+
+    border-right: 2px solid @bg-main;
+    border-bottom: 2px solid @bg-main;
+
+    transform: rotate(45deg);
+  }
+}
+
+.form__checkbox {
+  &:checked + .form__label--checkbox::after {
+    display: block;
+  }
+
+  &:hover + .form__label--checkbox::before {
+    border-color: @chbx-hvr-color;
+  }
+
+  &:active + .form__label {
     opacity: 0.3;
   }
 }
@@ -207,47 +252,6 @@
   &:focus {
     border-color: @text-color;
     outline: none;
-  }
-}
-
-.form__checkbox-indicator {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 30px;
-
-  border: @border-dark;
-
-  &::after {
-    display: none;
-    content: "";
-
-    position: absolute;
-    top: 3px;
-    left: 10px;
-
-    width: 10px;
-    height: 18px;
-
-    border-right: 2px solid @bg-main;
-    border-bottom: 2px solid @bg-main;
-
-    transform: rotate(45deg);
-  }
-}
-
-.form__checkbox {
-  &:checked ~ .form__checkbox-indicator::after {
-    display: block;
-  }
-
-  &:hover ~ .form__checkbox-indicator {
-    border-color: @chbx-hvr-color;
-  }
-
-  &:active ~ span {
-    opacity: 0.3;
   }
 }
 
@@ -346,14 +350,38 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    &::after {
+      top: 11px;
+      left: 11px;
+      width: 18px;
+      height: 18px;
+    }
   }
 
   .form__label--checkbox {
-    display: flex;
     height: 40px;
     width: 45.56%;
     padding-left: 59px;
     margin-bottom: 32px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    &::after {
+      top: 8px;
+      left: 16px;
+
+      height: 20px;
+      width: 10px;
+    }
   }
 
   .form__input {
@@ -372,18 +400,6 @@
     margin-left: 14px;
   }
 
-  .form__radio-indicator {
-    width: 40px;
-    height: 40px;
-
-    &::after {
-      top: 10px;
-      left: 10px;
-      width: 18px;
-      height: 18px;
-    }
-  }
-
   .form__textarea {
     height: 173px;
     margin-top: -1px;
@@ -393,19 +409,6 @@
 
   .form__checkbox {
     padding-left: 60px;
-  }
-
-  .form__checkbox-indicator {
-    width: 40px;
-    height: 40px;
-
-    &::after {
-      top: 7px;
-      left: 14px;
-
-      height: 20px;
-      width: 10px;
-    }
   }
 
   .form__submit,
