@@ -6,7 +6,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="body body">
+  <body class="body">
 
     <header class="page-header page-header--index">
       <div class="page-header__wrapper">
@@ -34,10 +34,8 @@
 
       <section class="promo">
         <div class="promo__wrapper">
-          <div class="promo__container">
-            <h1 class="promo__title">Функциональное питание для котов</h1>
-            <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          </div>
+          <h1 class="promo__title">Функциональное питание для котов</h1>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <img class="promo__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Корм Кэт Энерджи со вкусом курицы">
           <a class="promo__link button" href="form.html">Подобрать программу</a>
         </div>
@@ -107,10 +105,14 @@
             </p>
             <div class="example__stats">
               <dl class="example__results">
-                <dt class="example__category">снижение веса</dt>
-                <dd class="example__value">5 кг</dd>
-                <dt class="example__category">затрачено времени</dt>
-                <dd class="example__value">60 дней</dd>
+                <div class="example__field">
+                  <dt class="example__category">снижение веса</dt>
+                  <dd class="example__value">5 кг</dd>
+                </div>
+                <div class="example__field">
+                  <dt class="example__category">затрачено времени</dt>
+                  <dd class="example__value">60 дней</dd>
+                </div>
               </dl>
               <dl class="example__costs">
                 <dt>Затраты на питание:</dt>
@@ -119,11 +121,17 @@
             </div>
           </div>
           <div class="photo-mover">
-            <img class="photo-mover__image photo-mover__image--before" src="img/before-mobile@1x.png" width="320" height="240" alt="Толстый кот">
-            <img class="photo-mover__image photo-mover__image--after " src="img/after-mobile@1x.png" width="320" height="240" alt="Худой кот">
+            <div class="photo-mover__image photo-mover__image--after">
+              <img src="img/after-mobile@1x.png" width="320" height="240" alt="Худой кот">
+            </div>
+            <div class="photo-mover__image photo-mover__image--before">
+              <img  src="img/before-mobile@1x.png" width="320" height="240" alt="Толстый кот">
+            </div>
             <p class="photo-mover__control">
               <button class="photo-mover__label" type="button">Было</button>
-              <span class="photo-mover__bar"></span>
+              <span class="photo-mover__bar">
+                <button class="photo-mover__runner"></button>
+              </span>
               <button class="photo-mover__label" type="button">Стало</button>
             </p>
           </div>
@@ -134,7 +142,7 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
           <h3 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="contacts__address"><span>ул. Большая Конюшенная, д. 19/8</span> Санкт-Петербург</address>
         </div>
         <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CGT-UZ2g" width="320" height="263" aria-label="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
       </section>
