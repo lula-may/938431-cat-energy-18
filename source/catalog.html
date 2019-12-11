@@ -10,7 +10,11 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Кэт Энерджи">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Кэт Энерджи">
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -279,8 +283,8 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo ">
-          <img class="logo-main" src="img/logo-footer.svg" width="130" height="25" alt="Кэт Энерджи">
+        <a class="page-footer__logo logo-main" href="index.html">
+          <img class="logo-main__image" src="img/logo-footer.svg" width="130" height="25" alt="Кэт Энерджи">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">

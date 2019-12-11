@@ -49,6 +49,11 @@
 
     border: none;
   }
+
+  .page-header__logo-image {
+    width: 173px;
+    height: 58px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -73,7 +78,11 @@
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-position: 100% top;
       background-repeat: no-repeat;
-      background-size: auto auto;
+      background-size: cover;
+
+      @media (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 
@@ -84,6 +93,11 @@
   .page-header__logo {
     height: 60px;
     width: 245px;
-    margin-top: 55px;
+    margin-top: 52px;
+  }
+
+  .page-header__logo-image {
+    width: 202px;
+    height: 60px;
   }
 }
