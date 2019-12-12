@@ -87,6 +87,12 @@
   background-size: cover;
 }
 
+@media (min-resolution: @retina-dppx) {
+  .extra-catalog__gift {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+}
+
 .extra-catalog__gift p {
   width: 162px;
   margin: 0 auto;
@@ -104,7 +110,7 @@
   }
 
   .extra-catalog__wrapper {
-    width: 92%;
+    width: 92.2%;
   }
 
   .extra-catalog__main-title {
@@ -119,10 +125,45 @@
   }
 
   .extra-catalog__item {
-    padding: 28px 37px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 25px 37px 27px;
     margin-bottom: -1px;
 
     border: @border;
+  }
+
+  .extra-catalog__title {
+    width: 40.5%;
+    margin-right: auto;
+    padding: 0;
+
+    .set-font-size(@line, @line);
+  }
+
+  .extra-catalog__info {
+    justify-content: flex-end;
+    width: 40.5%;
+    margin: 0;
+    margin-bottom: 22px;
+
+    .set-font-size(@base-size, @line);
+  }
+
+  .extra-catalog__quantity {
+    text-align: right;
+  }
+
+  .extra-catalog__price {
+    width: 95px;
+    margin-left: 0;
+
+    text-align: right;
+  }
+
+  .extra-catalog__link {
+    width: 100%;
   }
 
   .extra-catalog__gift {
@@ -131,8 +172,15 @@
 
     text-align: left;
 
-    background-position: center 60%;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-position: center top;
     background-size: cover;
+  }
+
+  @media (min-resolution: @retina-dppx) {
+    .extra-catalog__gift {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 }
 
@@ -165,7 +213,7 @@
     display: flex;
     justify-content: space-between;
 
-    padding: 15px 0;
+    padding: 13px 0 15px;
     border: none;
     border-top: @border;
 
@@ -176,35 +224,47 @@
 
   .extra-catalog__title {
     width: 285px;
-    padding-top: 10px;
-    padding-left: 0;
+    padding-top: 12px;
+    margin: 0;
 
     .set-font-size(@line, @line);
   }
 
   .extra-catalog__info {
+    justify-content: space-between;
     width: 285px;
     margin-top: 14px;
     margin-bottom: 8px;
 
     .set-font-size(@base-size, @line);
+  }
 
-    dd {
-      min-width: 40px;
-      margin-left: 0;
-      text-align: left;
-    }
+  .extra-catalog__price {
+    width: auto;
+    min-width: 40px;
+    margin-left: 0;
+
+    text-align: left;
   }
 
   .extra-catalog__link {
+    align-self: center;
     width: 245px;
   }
 
   .extra-catalog__gift {
     width: 245px;
     height: auto;
-    padding: 186px 40px 44px;
+    padding: 186px 40px 42px;
 
     text-align: center;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  @media (min-resolution: @retina-dppx) {
+    .extra-catalog__gift {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 }
