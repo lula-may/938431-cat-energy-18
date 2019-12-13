@@ -26,6 +26,13 @@
   }
 }
 
+@media (min-resolution: @retina-dppx) {
+  .promo::before {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px 305px;
+  }
+}
+
 .promo__wrapper {
   position: relative;
   z-index: 1;
@@ -113,8 +120,8 @@
   .promo__image {
     flex-shrink: 0;
     position: absolute;
-    top: 199px;
-    left: -90px;
+    top: 201px;
+    left: calc(50% - 352px);
     max-width: 708px;
     width: 708px;
     height: 609px;
@@ -149,7 +156,7 @@
   }
 
   .promo__title {
-    padding-top: 84px;
+    padding-top: 86px;
   }
 
   .promo__slogan {
@@ -157,11 +164,11 @@
   }
 
   .promo__image {
-    top: 5px;
-    left: 415px;
+    top: 6px;
+    left: calc(50% - 161px);
 
-    width: 500px;
-    height: auto;
+    width: 552px;
+    height: 499px;
   }
 
   .promo__link {
