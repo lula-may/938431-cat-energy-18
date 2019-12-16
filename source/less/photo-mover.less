@@ -14,7 +14,6 @@
 
   overflow: hidden;
 
-
   img {
     flex-shrink: 0;
     max-width: 320px;
@@ -33,6 +32,14 @@
   justify-content: flex-start;
 
   width: 320px;
+}
+
+.photo-mover__image--show {
+  width: 320px;
+}
+
+.photo-mover__image--no-show {
+  width: 0;
 }
 
 .photo-mover__control {
@@ -124,6 +131,14 @@
   .photo-mover__image--before {
     left: calc(50% - 336px);
     width: 338px;
+  }
+
+  .photo-mover__image--show {
+    width: 690px;
+  }
+
+  .photo-mover__image--no-show {
+    width: 0;
   }
 
   .photo-mover__control {
@@ -222,6 +237,15 @@
   .photo-mover__image--before {
     left: -1px;
     width: 366px;
+  }
+
+  .photo-mover__image--no-show {
+    width: 0;
+  }
+
+  .photo-mover__image--show {
+    left: -1px;
+    width: 690px;
   }
 
   .photo-mover__runner {
