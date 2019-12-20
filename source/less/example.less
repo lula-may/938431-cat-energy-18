@@ -31,26 +31,25 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 32px;
+  margin-bottom: 9px;
 }
 
 .example__field {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 
   position: relative;
   width: 44%;
 
   text-align: center;
-
-  border: @border-dark;
-  border-radius: 3px;
 }
 
 .example__category {
-  position: absolute;
-  top: 45px;
+  position: relative;
+  order: 2;
+  top: -10px;
 
   max-width: 70%;
   padding-left: 17px;
@@ -62,6 +61,8 @@
 }
 
 .example__value {
+  order: 1;
+  align-self: stretch;
   margin: 0;
   padding-top: 14px;
   padding-bottom: 16px;
@@ -69,9 +70,14 @@
   .set-font-size(@medium-size, @medium-size);
   .set-uppercase-style();
   text-align: center;
+
+  border: @border-dark;
+  border-radius: 3px;
 }
 
 .example__costs {
+  margin: 0;
+  padding: 0;
   text-align: center;
   .set-font-size(@line*0.7, @line);
   .set-uppercase-style();
@@ -82,7 +88,6 @@
     margin: 0;
   }
 }
-
 
 @media (min-width: @tablet-width) {
   .example {
@@ -96,7 +101,7 @@
 
   .example__wrapper {
     width: 92%;
-    margin: 0 auto 254px;
+    margin: 0 auto 240px;
     padding-left: 2px;
   }
 
@@ -132,7 +137,7 @@
   }
 
   .example__category {
-    top: 62px;
+    top: -9px;
     left: auto;
     max-width: 88%;
     padding-left: 7px;
@@ -151,6 +156,8 @@
 
   .example__costs {
     margin: 0;
+    padding-bottom: 16px;
+
     text-align: right;
 
     .set-font-size(@line, @line);
@@ -202,7 +209,7 @@
   .example__results {
     width: 366px;
     margin: 0;
-    margin-bottom: 61px;
+    margin-bottom: 47px;
   }
 
   .example__field {

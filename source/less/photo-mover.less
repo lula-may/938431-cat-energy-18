@@ -1,13 +1,14 @@
 .photo-mover {
   position: relative;
-  padding-top: 294px;
+  padding-top: 307px;
   padding-bottom: 36px;
 }
 
 .photo-mover__image {
   display: flex;
+  justify-content: flex-start;
   position: absolute;
-  top: 22px;
+  top: 35px;
 
   width: 320px;
   height: 240px;
@@ -22,14 +23,13 @@
 }
 
 .photo-mover__image--after {
-  justify-content: flex-end;
+  flex-direction: row-reverse;
   right: calc(50% - 160px);
   width: 0;
 }
 
 .photo-mover__image--before {
   left: calc(50% - 160px);
-  justify-content: flex-start;
 
   width: 320px;
 }
@@ -124,7 +124,6 @@
 
   .photo-mover__image--after {
     right: calc(50% - 354px);
-
     width: 352px;
   }
 
@@ -231,7 +230,7 @@
 
   .photo-mover__image--after {
     left: 365px;
-    width: 326px;
+    width: 324px;
   }
 
   .photo-mover__image--before {
