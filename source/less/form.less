@@ -83,6 +83,8 @@
 }
 
 .form__label--input {
+  position: relative;
+
   margin-bottom: 14px;
 
   &:last-child {
@@ -107,6 +109,10 @@
     border-color: @error-color;
   }
 
+  &:invalid + .form__icon {
+    color: @error-color;
+  }
+
   &:hover {
     border: @border-dark;
   }
@@ -116,6 +122,10 @@
     outline: none;
     border-color: @text-color;
   }
+
+  &:active + .form__icon {
+    color: @bg-main;
+  }
 }
 
 .form__input--name {
@@ -124,10 +134,24 @@
 
 .form__input--email {
   margin-left: 12px;
+  padding-right: 50px;
 }
 
 .form__input--tel {
   margin-left: 10px;
+  padding-right: 50px;
+}
+
+.form__icon {
+  position: absolute;
+  top: 15px;
+  left: calc(100% - 33px);
+
+  color: @icon-color;
+}
+
+.form__icon--tel {
+  top: 12px;
 }
 
 .form__radio,
@@ -180,7 +204,8 @@
     display: block;
   }
 
-  &:hover + .form__label--radio::before {
+  &:hover + .form__label--radio::before,
+  &:focus + .form__label::before {
     border-color: @radio-hvr-color;
   }
 
@@ -234,7 +259,8 @@
     display: block;
   }
 
-  &:hover + .form__label--checkbox::before {
+  &:hover + .form__label--checkbox::before,
+  &:focus + .form__label--checkbox::before {
     border-color: @chbx-hvr-color;
   }
 
@@ -411,10 +437,21 @@
   .form__input--email {
     padding-left: 21px;
     margin-left: 19px;
+    padding-right: 60px;
   }
 
   .form__input--tel {
     margin-left: 14px;
+    padding-right: 60px;
+  }
+
+  .form__icon {
+    top: 16px;
+    left: calc(100% - 38px);
+  }
+
+  .form__icon--tel {
+    top: 16px;
   }
 
   .form__textarea {
@@ -447,7 +484,7 @@
 
 @media (min-width: @desktop-width) {
   .form {
-    margin-bottom: 80px;
+    margin-bottom: 81px;
   }
 
   .form__container {
@@ -474,14 +511,20 @@
   }
 
   .form__fieldset--inputs {
+    display: block;
     width: 570px;
     margin: 0 0 66px;
   }
 
   .form__fieldset--radios {
+    display: block;
     width: 570px;
     margin: 0 0 66px;
     padding: 24px 27px 23px;
+  }
+
+  .form__fieldset--contacts {
+    margin-bottom: 43px;
   }
 
   .form__fieldset--adds {
@@ -491,6 +534,7 @@
   .form__title {
     left: -40px;
     padding-left: 38px;
+    margin-bottom: 72px;
   }
 
   .form__title--comment {
@@ -498,11 +542,24 @@
     margin-bottom: 37px;
   }
 
+  .form__title--adds {
+    margin-bottom: 53px;
+  }
+
   .form__label--input {
     display: flex;
     align-items: baseline;
     width: 570px;
     padding: 0;
+  }
+
+  .form__icon {
+    top: 20px;
+  }
+
+  .form__icon--tel {
+    top: 16px;
+    left: calc(100% - 40px);
   }
 
   .form__textarea {

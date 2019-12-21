@@ -9,10 +9,11 @@
 
   .set-font-size(@line*0.8, @line*0.8);
   text-decoration: none;
-  color: @text-color;
+  color: @darkgrey;
 
-  &:hover path {
-    fill: @bg-main;
+  &:hover svg,
+  &:focus svg {
+    color: @bg-main;
   }
 
   &:active {
