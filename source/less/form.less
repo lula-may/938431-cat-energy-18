@@ -204,7 +204,8 @@
     display: block;
   }
 
-  &:hover + .form__label--radio::before {
+  &:hover + .form__label--radio::before,
+  &:focus + .form__label::before {
     border-color: @radio-hvr-color;
   }
 
@@ -258,7 +259,8 @@
     display: block;
   }
 
-  &:hover + .form__label--checkbox::before {
+  &:hover + .form__label--checkbox::before,
+  &:focus + .form__label--checkbox::before {
     border-color: @chbx-hvr-color;
   }
 
