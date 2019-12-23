@@ -88,8 +88,7 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   gulp.parallel("html", "css", "js", "images"),
-  "webp",
-  "sprite"
+  gulp.parallel("webp","sprite")
 ));
 
 gulp.task("server", function () {
