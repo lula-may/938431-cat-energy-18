@@ -87,10 +87,7 @@ gulp.task("sprite", function() {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
-  "html",
-  "css",
-  "js",
-  "images",
+  gulp.parallel("html", "css", "js", "images"),
   "webp",
   "sprite"
 ));
