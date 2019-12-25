@@ -56,17 +56,25 @@
 @media (min-width: @tablet-width) {
   .product {
     margin-top: 141px;
-    padding: 162px 5.37% 40px 5.37%;
+    padding: 126px 5.37% 40px 5.37%;
 
     background-color: @bg-secondary;
     border: none;
   }
 
+  .product__link--image {
+    position: relative;
+    display: block;
+    flex-shrink: 0;
+    margin-bottom: 36px;
+  }
+
   .product__image {
     left: calc(50% - 162px);
     top: auto;
-    bottom: 306px;
+    bottom: 0;
     width: 324px;
+    max-width: 324px;
     height: auto;
   }
 
@@ -101,12 +109,12 @@
 @media (min-width: @desktop-width) {
   .product {
     margin-top: 142px;
-    padding: 163px 39px 40px 38px;
+    padding: 127px 39px 40px 38px;
   }
 
   .product__image {
     left: calc(50% - 123px);
-    bottom: 303px;
+    bottom: 0;
 
     width: 245px;
   }

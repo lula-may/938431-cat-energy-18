@@ -105,9 +105,10 @@
     width: 45.61%;
     padding: 110px 75px 40px 0;
     margin-bottom: 88px;
+    margin-right: auto;
 
     &:nth-child(even) {
-      margin-left: auto;
+      margin-right: 0;
     }
 
     &:last-child,
@@ -187,11 +188,19 @@
     padding: 110px 0 39px 0;
     margin-left: 0;
     margin-bottom: 20px;
+    margin-right: 79px;
 
-    &:nth-child(3),
+    &:nth-last-child(2),
     &:last-child {
-      margin-left: auto;
       margin-bottom: 20px;
+    }
+
+    &:nth-child(even) {
+      margin-right: 78px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
     }
 
     &::after {
