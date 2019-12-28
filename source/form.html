@@ -55,16 +55,16 @@
           <div class="form__container">
             <fieldset class="form__fieldset form__fieldset--inputs">
               <label class="form__label form__label--input">
-                Имя:*
+                <span>Имя:*</span>
                 <input class="form__input form__input--name" type="text" name="Name" placeholder="Барсик" required>
               </label>
               <label class="form__label form__label--input">
-                Вес (кг):*
-                <input class="form__input" type="number" name="Weight" placeholder="7" required>
+                <span>Вес (кг):*</span>
+                <input class="form__input" type="text" name="Weight" pattern="[0-9]{1,}" placeholder="7" required>
               </label>
               <label class="form__label form__label--input">
-                Возраст (лет):
-                <input class="form__input" type="number" name="Age" placeholder="7">
+                <span>Возраст (лет):</span>
+                <input class="form__input" type="text" name="Age" pattern="[0-9]{1,}" placeholder="7">
               </label>
             </fieldset>
 
@@ -153,8 +153,8 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo logo-main" href="index.html">
-          <img class="logo-main__image" src="img/logo-footer.svg" width="130" height="25" alt="Кэт Энерджи">
+        <a class="page-footer__logo" href="index.html">
+          <img class="logo-main" src="img/logo-footer.svg" width="130" height="25" alt="Кэт Энерджи">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
