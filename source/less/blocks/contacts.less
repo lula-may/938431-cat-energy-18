@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
 
-  width: 87.5%;
+  width: 88.2%;
   margin: 0 auto;
   padding-top: 27px;
   padding-bottom: 26px;
@@ -22,11 +22,12 @@
 
   .set-font-size(@base-size, @line);
   .set-uppercase-style();
+  color: @title-color;
 }
 
 .contacts__address {
   width: 140px;
-  padding-left: 1px;
+  padding-right: 3px;
 
   .set-font-size(@line*0.7, @line);
   font-style: normal;
@@ -38,7 +39,19 @@
   margin-bottom: -4px;
 
   background-color: @bg-secondary;
+  background-image: url("../img/map-pin.png"),
+    url("../img/bg-map-mobile@1x.png");
+  background-position: center 45%, center center;
+  background-repeat: no-repeat;
+  background-size: 62px auto, cover;
   border: none;
+}
+
+@media (min-resolution: @retina-dppx) {
+  .contacts__map {
+    background-image: url("../img/map-pin.png"),
+      url("../img/bg-map-mobile@2x.png");
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -58,6 +71,7 @@
 
   .contacts__address {
     width: 158px;
+    padding-right: 1px;
 
     .set-font-size(@base-size, @line);
     text-align: right;
@@ -71,6 +85,19 @@
   .contacts__map {
     width: 100%;
     min-height: 396px;
+
+    background-image: url("../img/map-pin.png"),
+      url("../img/bg-map-tablet@1x.png");
+    background-position: center 50%, center center;
+    background-repeat: no-repeat;
+    background-size: 124px auto, cover;
+  }
+
+  @media (min-resolution: @retina-dppx) {
+    .contacts__map {
+      background-image: url("../img/map-pin.png"),
+        url("../img/bg-map-tablet@2x.png");
+    }
   }
 }
 
@@ -85,7 +112,7 @@
     right: calc(50% + 40px);
 
     width: 570px;
-    padding-top: 62px;
+    padding-top: 64px;
 
     background-color: @bg-base;
   }
@@ -103,5 +130,17 @@
 
   .contacts__map {
     min-height: 400px;
+    background-image: url("../img/map-pin.png"),
+      url("../img/bg-map-desktop@1x.png");
+    background-position: 75.8% 150px, center center;
+    background-repeat: no-repeat;
+    background-size: 124px auto, cover;
+  }
+
+  @media (min-resolution: @retina-dppx) {
+    .contacts__map {
+      background-image: url("../img/map-pin.png"),
+        url("../img/bg-map-desktop@2x.png");
+    }
   }
 }

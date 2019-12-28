@@ -66,13 +66,13 @@
 .promo__image {
   width: 280px;
   height: 270px;
-  margin-bottom: 5px;
+  // margin-bottom: 5px;
 }
 
 .promo__link {
   align-self: stretch;
   padding-top: 11px;
-  padding-bottom: 12px;
+  padding-bottom: 11px;
 
   .set-font-size(@line*0.7, @line*0.9);
 }
@@ -80,8 +80,7 @@
 @media (min-width: @tablet-width) {
   .promo {
     width: auto;
-    min-height: 812px;
-    margin-bottom: 1px;
+    margin-bottom: 0;
     z-index: 2;
 
     color: @title-color;
@@ -94,7 +93,7 @@
 
   .promo__wrapper {
     align-items: flex-start;
-    width: 68.75%;
+    width: 69.5%;
     margin: 0 auto;
 
     background: none;
@@ -103,7 +102,7 @@
   .promo__title {
     width: 420px;
     margin: 0;
-    margin-bottom: 42px;
+    margin-bottom: 41px;
     padding: 0;
 
     .set-font-size(@line*3, @line*3);
@@ -112,6 +111,7 @@
   .promo__slogan {
     width: 420px;
     padding: 0;
+    padding-left: 1px;
     margin: 0;
     margin-bottom: 48px;
     .set-font-size(@line, @line);
@@ -121,8 +121,8 @@
     flex-shrink: 0;
     position: absolute;
     top: auto;
-    bottom: -5px;
-    left: calc(50% - 352px);
+    bottom: -2px;
+    left: calc(50% - 354px);
     max-width: 708px;
     width: 708px;
     height: 609px;
@@ -132,9 +132,9 @@
   .promo__link {
     position: relative;
     align-self: flex-start;
-    padding: 15px 27px 17px 25px;
+    padding: 15px 29px 17px 25px;
     margin: 0;
-    margin-bottom: 530px;
+    margin-bottom: 527px;
     margin-left: 2px;
 
     .set-font-size(@line, @line);
@@ -157,7 +157,7 @@
   }
 
   .promo__title {
-    padding-top: 84px;
+    padding-top: 86px;
   }
 
   .promo__slogan {

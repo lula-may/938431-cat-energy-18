@@ -123,12 +123,12 @@
   }
 
   .photo-mover__image--after {
-    right: calc(50% - 354px);
-    width: 352px;
+    right: calc(50% - 352px);
+    width: 353px;
   }
 
   .photo-mover__image--before {
-    left: calc(50% - 336px);
+    left: calc(50% - 338px);
     width: 338px;
   }
 
@@ -143,9 +143,10 @@
   .photo-mover__control {
     position: relative;
     align-items: flex-start;
-    width: 570px;
+    width: 572px;
     margin: 0 auto;
     padding: 0;
+    padding-right: 2px;
     z-index: 1;
   }
 
@@ -181,8 +182,8 @@
   .photo-mover__runner {
     top: -14px;
     left: calc(50% - 13px);
-    width: 33px;
-    height: 33px;
+    width: 34px;
+    height: 34px;
 
     border: 1px solid #cecece;
     border-radius: 50%;
@@ -195,7 +196,7 @@
 
     &:active,
     &:focus {
-      border-color: @bg-main;
+      border: 2px solid @bg-main;
       outline: none;
     }
 
@@ -203,8 +204,8 @@
       content: "";
 
       position: absolute;
-      top: 12px;
-      left: 12px;
+      top: calc(50% - 4px);
+      left: calc(50% - 4px);
       width: 8px;
       height: 8px;
 
@@ -217,9 +218,7 @@
 @media (min-width: @desktop-width) {
   .photo-mover {
     width: 52.77%;
-    padding-top: 367px;
-    padding-right: calc(53.77% - 664px);
-    padding-left: 80px;
+    padding: 367px calc(53.77% - 664px) 66px 80px;
 
     &::before {
       left: 365px;

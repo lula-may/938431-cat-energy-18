@@ -12,19 +12,18 @@
 .example__title {
   width: 87.5%;
   margin: 0 auto;
-  padding: 18px 0 24px;
+  padding: 16px 0 24px;
 
   .set-font-size(@title-size, @line*3);
   .set-heading-style();
+  color: @title-color;
 }
 
 .example__text {
   padding: 0;
-  padding-right: 9.64%;
+  padding-right: 10px;
   margin: 0;
-  margin-bottom: 25px;
-
-  line-height: 19px;
+  margin-bottom: 24px;
 }
 
 .example__results {
@@ -52,7 +51,7 @@
   top: -10px;
 
   max-width: 70%;
-  padding-left: 17px;
+  padding-left: 15px;
   padding-right: 18px;
 
   .set-font-size(@line*0.6, @line*0.6);
@@ -64,12 +63,13 @@
   order: 1;
   align-self: stretch;
   margin: 0;
-  padding-top: 14px;
-  padding-bottom: 16px;
+  padding-top: 13px;
+  padding-bottom: 18px;
 
   .set-font-size(@medium-size, @medium-size);
   .set-uppercase-style();
   text-align: center;
+  color: @title-color;
 
   border: @border-dark;
   border-radius: 3px;
@@ -81,6 +81,7 @@
   text-align: center;
   .set-font-size(@line*0.7, @line);
   .set-uppercase-style();
+  color: @title-color;
 
   dt,
   dd {
@@ -102,13 +103,12 @@
   .example__wrapper {
     width: 92%;
     margin: 0 auto 240px;
-    padding-left: 2px;
   }
 
   .example__title {
-    width: 91.5%;
+    width: 92%;
     margin: 0 auto;
-    padding: 44px 0 63px;
+    padding: 43px 0 64px;
     .set-font-size(@line*3, @line*3);
   }
 
@@ -149,13 +149,15 @@
   }
 
   .example__value {
-    padding-bottom: 20px;
+    padding-bottom: 19px;
+    padding-top: 14px;
 
     .set-font-size(@line*1.5, 37px);
   }
 
   .example__costs {
     margin: 0;
+    padding-top: 2px;
     padding-bottom: 16px;
 
     text-align: right;
@@ -187,10 +189,11 @@
   }
 
   .example__wrapper {
-    align-self: center;
+    align-self: stretch;
     width: 47.23%;
     padding-left: calc(47.23% - 570px);
-    margin: 70px 0;
+    padding-top: 70px;
+    margin: 0 auto;
   }
 
   .example__text {
@@ -203,12 +206,13 @@
     flex-direction: column;
 
     width: 366px;
+    margin-bottom: 40px;
   }
 
   .example__results {
     width: 366px;
     margin: 0;
-    margin-bottom: 47px;
+    margin-bottom: 44px;
   }
 
   .example__field {

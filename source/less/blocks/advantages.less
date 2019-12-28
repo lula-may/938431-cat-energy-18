@@ -25,20 +25,24 @@
   position: relative;
 
   min-height: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding-left: 80px;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: -1px;
     width: 60px;
     height: 60px;
     background-color: @bg-main;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50px 50px;
+  }
+
+  &:last-child {
+    margin-bottom: 21px;
   }
 }
 
@@ -89,7 +93,7 @@
   }
 
   .advantages__wrapper {
-    width: 91.93%;
+    width: 92.2%;
     margin: 0 auto;
   }
 
@@ -102,7 +106,7 @@
   }
 
   .advantages__item {
-    width: 45.61%;
+    width: 46%;
     padding: 110px 75px 40px 0;
     margin-bottom: 88px;
     margin-right: auto;
@@ -113,10 +117,12 @@
 
     &:last-child,
     &:nth-last-child(2) {
-      margin-bottom: 57px;
+      margin-bottom: 55px;
     }
 
     &::before {
+      left: 1px;
+
       width: 80px;
       height: 80px;
     }

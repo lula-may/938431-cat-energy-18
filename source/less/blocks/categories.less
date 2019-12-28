@@ -17,7 +17,7 @@
 
 .categories__item {
   position: relative;
-  padding: 31px 18px 1px;
+  padding: 30px 18px 1px;
   margin-bottom: 21px;
 
   &:last-child {
@@ -35,7 +35,7 @@
     content: "";
     position: absolute;
     top: 24px;
-    left: 23px;
+    left: 22px;
     width: 50px;
     height: 50px;
 
@@ -48,7 +48,7 @@
 
 .categories__item--slim::after {
   top: 21px;
-  left: 16px;
+  left: 15px;
 
   background: url("../img/cat-slim-icon.svg") top center no-repeat;
 }
@@ -62,20 +62,21 @@
 
 .categories__title {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   padding-left: 73px;
 
   .set-uppercase-style();
   .set-font-size(@medium-size, 37px);
+  color: @title-color;
 }
 
 .categories__text {
   margin: 0;
   padding: 0;
   padding-left: 2px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
 
-  .set-font-size(14px, 19px);
+  .set-font-size(14px, @line*0.9);
 
   border-bottom: @border;
 }
@@ -84,7 +85,7 @@
   display: flex;
   align-items: center;
   height: 55px;
-  margin-left: 2px;
+  margin-left: 1px;
   .set-uppercase-style();
   .set-font-size(@base-size, @base-size);
   text-decoration: none;
@@ -95,8 +96,8 @@
     display: block;
     width: 25px;
     height: 13px;
-    margin-top: 5px;
-    margin-left: 13px;
+    margin-top: 4px;
+    margin-left: 12px;
 
     background-image: url("../img/right-arrow-long-icon.svg");
     background-repeat: no-repeat;
@@ -127,7 +128,7 @@
   }
 
   .categories__item {
-    padding: 75px 281px 44px 51px;
+    padding: 78px 281px 44px 50px;
     margin-bottom: 32px;
 
     &:last-child {
@@ -135,7 +136,7 @@
     }
 
     &::before {
-      top: 90px;
+      top: 94px;
       left: auto;
       right: 61px;
       width: 200px;
@@ -144,17 +145,19 @@
   }
 
   .categories__item--slim::after {
-    top: 79px;
+    top: 82px;
     left: auto;
-    right: 85px;
+    right: 86px;
     width: 150px;
     height: 195px;
   }
 
   .categories__item--pro {
     padding-right: 312px;
+    padding-top: 75px;
 
     &::before {
+      top: 90px;
       right: 59px;
     }
 
@@ -176,7 +179,7 @@
   }
 
   .categories__text {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     .set-font-size(@base-size, @line*1.2);
     border: none;
   }
@@ -243,12 +246,16 @@
   }
 
   .categories__text {
-    padding-bottom: 15px;
+    padding-bottom: 14px;
     margin-bottom: 0;
   }
 
-  .categories__link::after {
-    margin-top: 2px;
-    margin-left: 23px;
+  .categories__link {
+    padding-left: 2px;
+
+    &::after {
+      margin-top: 2px;
+      margin-left: 23px;
+    }
   }
 }
