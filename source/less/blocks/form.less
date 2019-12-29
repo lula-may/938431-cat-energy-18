@@ -349,7 +349,7 @@
   .form__fieldset--adds {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     padding: 0 9%;
     margin-bottom: 21px;
@@ -419,6 +419,10 @@
 
       height: 20px;
       width: 10px;
+    }
+
+    &:nth-of-type(odd) {
+      margin-right: auto;
     }
   }
 
@@ -575,6 +579,14 @@
     padding-top: 4px;
     padding-left: 58px;
     margin-right: 80px;
+
+    &:nth-of-type(odd) {
+      margin-right: 80px;
+    }
+
+    &:last-child {
+      margin-right: auto;
+    }
 
     &:nth-of-type(4n) {
       margin-right: 0;
